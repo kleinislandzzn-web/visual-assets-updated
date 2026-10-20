@@ -1,0 +1,459 @@
+[
+  {
+    "category": "渐变",
+    "path": "assets/images/01-bg_87428722.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "d9ea667b1f02a22937ca518bdbe85488ab0baae13c1110db1044b2f8b8befe80"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/02-bg_87428724.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "c89dfd80953c88f130620910ecdcf5e89e46f9fe56306c6acac0acc8dd39b7cc"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/03-bg_87428723.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "30a11187b4f7fd5d2a7e6ee7a7f880d6730b3c36596d31091d36fde154359cfb"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/04-bg_87428726.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "8a39e3dd40c4c0ee98da5d586606a29c0a2613d1d640a3d156cf1f0e607dd02b"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/05-bg_87428725.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "19bab3143288fb928ab30fdb4152a67a7cfb8e2ee79001ec943e94d9ffa2cfb8"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/06-bg_87428732.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "fd3c96fd090e5d69994123156e5802a7c4559ed0f83a73cb2385e866788062e6"
+  },
+  {
+    "category": "渐变",
+    "path": "assets/images/07-bg_87428727.png",
+    "width": 1080,
+    "height": 1440,
+    "sha256": "005a4a9d50dff27cd213c1118f051e8d76350b11dcc15d9c917783b67631fa91"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428820.png",
+    "name": "简约 · 01",
+    "path": "assets/images/new-1-01.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "4236c953ffb92c6cb478926470039d22ef44aaf48a5de31f4b1e36c2b662745c"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428821.png",
+    "name": "简约 · 02",
+    "path": "assets/images/new-1-02.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "4d37a51c3dd4167c285a0ce3311f661ecb58ae4a56470f8af33ad13bed0e05dd"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428822.png",
+    "name": "简约 · 03",
+    "path": "assets/images/new-1-03.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "cc648059db29982a83488f1e61d115b72fc0a8b95e051b885941463e0d1842fc"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428823.png",
+    "name": "简约 · 04",
+    "path": "assets/images/new-1-04.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "65d34ad03ea9d0e8502411800f8f62d5547b1fc3fac5ddf88d793a745be44878"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428801.png",
+    "name": "简约 · 05",
+    "path": "assets/images/new-1-05.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "eccaea376115145d85590d829eaf05909b9954a50a0bd992b5372a43727fe370"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428842.png",
+    "name": "简约 · 06",
+    "path": "assets/images/new-1-06.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "8ac387206280fc27772f8910e132a61911563f52a65bd96cbb168bd65df8eecf"
+  },
+  {
+    "category": "简约",
+    "originalFile": "Group 2119904380.png",
+    "name": "简约 · 07",
+    "path": "assets/images/new-1-07.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "ab3e59bf5316b9094248136b91d75eedc2bfa281ebed932fa49d88d455e9266b"
+  },
+  {
+    "category": "简约",
+    "originalFile": "87428859.png",
+    "name": "简约 · 08",
+    "path": "assets/images/new-1-08.png",
+    "width": 4320,
+    "height": 5760,
+    "sha256": "e68472caa365e72d8b6e45667455f16b4fafd38ff18f014f05b76e37644d573f"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-195e0168-2cf9-4bb2-a7de-a0e2b427917b 1.png",
+    "name": "求助类 · 线稿 · 01",
+    "path": "assets/images/new-2-01.png",
+    "width": 3496,
+    "height": 3496,
+    "sha256": "fda59babb8e218ea6245bf8ea3aa684835340bb8a1b32c642354158d6aa3a733",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-c6de0f01-906e-466a-a5f3-b4062e32e939 1.png",
+    "name": "求助类 · 线稿 · 02",
+    "path": "assets/images/new-2-02.png",
+    "width": 3492,
+    "height": 3496,
+    "sha256": "2df9ab4e3fe9554dfff7ea320a334bcc34ff33591434b840ab873ac91ac37f6c",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-9ae269b3-1e62-4d5d-8dff-04fc98636eed 1.png",
+    "name": "求助类 · 线稿 · 03",
+    "path": "assets/images/new-2-03.png",
+    "width": 3492,
+    "height": 3492,
+    "sha256": "d61bd419fe94e430da258cdd39512169d5aa97e9e5514f1180435c5a68b29e98",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-2efe9190-133a-4cf5-8e49-4694b2ce78e6 1.png",
+    "name": "求助类 · 线稿 · 04",
+    "path": "assets/images/new-2-04.png",
+    "width": 3492,
+    "height": 3492,
+    "sha256": "17e7df1bf2296c6f6bfad4037f1fa98a255e6a73a8b36669f3cc47482223f0a0",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-9fe640c6-1486-4cfe-bb4a-99c5a0bfab73 1.png",
+    "name": "求助类 · 线稿 · 05",
+    "path": "assets/images/new-2-05.png",
+    "width": 3492,
+    "height": 3492,
+    "sha256": "e2842947fc5180e57a53214a1444f53ff4a31fafee3423a369f8f46cb5b096fb",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-bf0fed41-26be-45f3-b612-a5eaaadb85cd 2.png",
+    "name": "求助类 · 线稿 · 06",
+    "path": "assets/images/new-2-06.png",
+    "width": 3496,
+    "height": 3496,
+    "sha256": "6dc054676d6c41dd876c7df283b12c8c7ab169815e8b56fa67a9827b5a070793",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-00693837-69cd-4668-ac47-b3e0ff41de93 2.png",
+    "name": "求助类 · 线稿 · 07",
+    "path": "assets/images/new-2-07.png",
+    "width": 3492,
+    "height": 3492,
+    "sha256": "5ac0a4ea908d59bdd4433f0deeb1aa0b2252f1beb2c6513c366b96bba9fc406e",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-8a7ed5fa-c72f-4fb4-8c8a-28fe62e2b820 1.png",
+    "name": "求助类 · 线稿 · 08",
+    "path": "assets/images/new-2-08.png",
+    "width": 3496,
+    "height": 3496,
+    "sha256": "0c409e225be0efc637889e116c205eaf5c92b22ba82eb0384d49f0ed487ff1e4",
+    "subtype": "线稿"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-23b09229-7a24-4384-892f-4a81a2385fb9 1.png",
+    "name": "求助类 · 动物 · 01",
+    "path": "assets/images/new-3-01.png",
+    "width": 4012,
+    "height": 4008,
+    "sha256": "0031ba49822c49a8022a0ca8f4f111af93ca6929186326ba9ba762ca7067670a",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-da2e51cb-01b6-48d0-b4f1-d80db2d6df06 1.png",
+    "name": "求助类 · 动物 · 02",
+    "path": "assets/images/new-3-02.png",
+    "width": 4012,
+    "height": 4008,
+    "sha256": "b46efc7bf4688032974a6eb5ae2d2993eff14e4ec28adc0222c680735d5bd711",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-49e6104e-329c-40a5-be8c-9799c6ca825f 1.png",
+    "name": "求助类 · 动物 · 03",
+    "path": "assets/images/new-3-03.png",
+    "width": 4456,
+    "height": 4456,
+    "sha256": "257b51e2cf56c8bd45c4917ac5c4f7f16834b83bd07ac8ab3222c9ba7d2f18cd",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "exec-1d06bf47-4cad-4b7d-b047-72c321bda13c 1.png",
+    "name": "求助类 · 动物 · 04",
+    "path": "assets/images/new-3-04.png",
+    "width": 4368,
+    "height": 4368,
+    "sha256": "de125e6c8174fed41e64b3e1ba97da6d8515e9fe29a55e9195478d32240fbfca",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "Subtract.png",
+    "name": "求助类 · 动物 · 05",
+    "path": "assets/images/new-3-05.png",
+    "width": 3148,
+    "height": 3214,
+    "sha256": "d985097696e22ebeec1544b05a090637c3233b0bf9c223d9bc6a53fdc5d8fad6",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "Confused white bunny holding question mark_20261020150552 2.png",
+    "name": "求助类 · 动物 · 06",
+    "path": "assets/images/new-3-06.png",
+    "width": 3844,
+    "height": 3844,
+    "sha256": "fd7e844183d3b62ab3486ce13948e3bfea64047940a98130eec116311ca9212e",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "Subtract-1.png",
+    "name": "求助类 · 动物 · 07",
+    "path": "assets/images/new-3-07.png",
+    "width": 2894,
+    "height": 3664,
+    "sha256": "7f15d109c794604e727374ab4af05a5dd218b5a4bfd3f769308eb74b4820c05c",
+    "subtype": "动物"
+  },
+  {
+    "category": "求助类",
+    "originalFile": "Confused animals holding question marks_20261020144405 5.png",
+    "name": "求助类 · 动物 · 08",
+    "path": "assets/images/new-3-08.png",
+    "width": 2844,
+    "height": 2980,
+    "sha256": "f48b4c3c1b2ea39e39ca01b203aa06dc868dfeaeb3838d4201ff763b6f6c07bc",
+    "subtype": "动物"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 01",
+    "path": "assets/images/nonhelp-style1-01.png",
+    "width": 4792,
+    "height": 4796,
+    "sha256": "7f667941107d4def71a33d64924c1b452be68e0c69633459b6dbf09217da1c08",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-96c16f83-9f58-45d8-8a9a-8c87548edb4e 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 02",
+    "path": "assets/images/nonhelp-style1-02.png",
+    "width": 4792,
+    "height": 4796,
+    "sha256": "fd65754ecd0053ce4b5e489d1f09b6b3b9461351740ce265c9cde1cfdb0e389f",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-4d4b4d13-1ebd-4912-bc92-7a1145d058c6 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 03",
+    "path": "assets/images/nonhelp-style1-03.png",
+    "width": 4792,
+    "height": 4796,
+    "sha256": "b4773a922703c920896771d42239f59809f0d0204f5cc924f9bf01e3a8c26155",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-e2797b4b-05b7-4d38-a449-720c501090c7 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 04",
+    "path": "assets/images/nonhelp-style1-04.png",
+    "width": 4792,
+    "height": 4796,
+    "sha256": "7a23a7be3d8969dd0075d7f786f52072c30eff602b4217eabd396e1512c77b99",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-563fe942-1772-4fc2-8cae-687c1b8adf23 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 05",
+    "path": "assets/images/nonhelp-style1-05.png",
+    "width": 4968,
+    "height": 4968,
+    "sha256": "85154a9d882e59b93415c02152ee9866ea7cb78258e6be14e2d8407fe3fa570e",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-666028d1-8d89-4dc2-a3b5-97118314eb7a 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 06",
+    "path": "assets/images/nonhelp-style1-06.png",
+    "width": 5008,
+    "height": 5012,
+    "sha256": "cc3d9177e01a42f9334186b5765e7967481ea7843cadd750018d7f77433aaa7e",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-6bc6fdd4-bba8-4a98-93e1-8aa3cc4baf56 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 07",
+    "path": "assets/images/nonhelp-style1-07.png",
+    "width": 4792,
+    "height": 4792,
+    "sha256": "e3c181954499ca1a43de9e8f71cafe22e9157b9887bc9b18902f6eaf9677c29d",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-844ec329-8545-45ab-a95d-a88fedaae6cf 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "生活物件",
+    "name": "非求助类 · 生活物件 · 08",
+    "path": "assets/images/nonhelp-style1-08.png",
+    "width": 4624,
+    "height": 4624,
+    "sha256": "7c6f4757be14ad85a51637abd2888d77c62133ed88078c8c5a4c9fd89e24fe3a",
+    "sourceArchive": "非求助类素材-风格1.zip",
+    "originalFile": "exec-f5dc327f-702c-41ff-a2d9-df0fa00c3763 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 01",
+    "path": "assets/images/nonhelp-style2-01.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "d547fc260dbc5ab8eb4fa71ba61af97d73a2669f9754ac864264c4049d23b9cd",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "33 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 02",
+    "path": "assets/images/nonhelp-style2-02.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "7cedbee710253cd01bb05e5ef62cc052fad467498b6e548a87d55e290fedca5f",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "44 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 03",
+    "path": "assets/images/nonhelp-style2-03.png",
+    "width": 3436,
+    "height": 3436,
+    "sha256": "49bea2354ed3c8069484acec764566f6fa541db12dc6990066f38636d1faef49",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "22 3.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 04",
+    "path": "assets/images/nonhelp-style2-04.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "3cb98c15013de44b19f5069a6039dcb6c3b3f96192ef224a9243157553ac6588",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "1010 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 05",
+    "path": "assets/images/nonhelp-style2-05.png",
+    "width": 3436,
+    "height": 3436,
+    "sha256": "c201b96290a58ab2cd7651e1b5f1ee22a377348b3849ab2fb6d49de08c7ba08a",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "55 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 06",
+    "path": "assets/images/nonhelp-style2-06.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "c34e768b87200f18dbe3c98c7d39f055603f752df27cf5df86c3fa887eb9bf04",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "99 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 07",
+    "path": "assets/images/nonhelp-style2-07.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "b60f01639b3c3c7cca466bd3abea64239bf371c981044ea10651f97475e39f1a",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "88 1.png"
+  },
+  {
+    "category": "非求助类",
+    "subtype": "拟人图标",
+    "name": "非求助类 · 拟人图标 · 08",
+    "path": "assets/images/nonhelp-style2-08.png",
+    "width": 3440,
+    "height": 3440,
+    "sha256": "690d0f29f5dc7605432d5560c38c431bd571d2c6cffbde7a56529ea065e2090d",
+    "sourceArchive": "非求助类素材-风格2.zip",
+    "originalFile": "12121 1.png"
+  }
+]

@@ -1,0 +1,201 @@
+<html lang="zh-CN"><head>
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>背景与插图素材</title>
+
+<style>
+:root{--ink:#1f2329;--muted:#8f959e;--line:#e7e9ed;--surface:#f7f8fa;--blue:#3370ff;--shadow:0 12px 28px rgba(31,35,41,.12)}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;min-height:0;overflow:hidden}
+body{color:var(--ink);background:#fff;font-family:"Avenir Next","PingFang SC","Microsoft YaHei",sans-serif}
+button{font:inherit}
+main{width:100%;height:100%;min-height:0;padding:0;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:clamp(8px,5.04px,14px);overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:end;gap:20px}
+h1{margin:0;font-size:clamp(17px,2vw,24px);font-weight:750;letter-spacing:-.025em}
+header p{margin:0;color:var(--muted);font-size:11px;white-space:nowrap}
+.tabs{width:max-content;display:grid;grid-template-columns:repeat(2,1fr);gap:3px;padding:3px;border-radius:9px;background:#f2f3f5}
+.tab{min-width:88px;padding:7px 15px;border:0;border-radius:7px;color:#646a73;background:transparent;font-size:12px;font-weight:650;cursor:pointer;transition:transform .2s ease,color .2s ease,background .2s ease,box-shadow .2s ease}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--blue);background:#fff;box-shadow:0 2px 8px rgba(31,35,41,.09)}
+.tab:active{transform:scale(.98)}
+.views{height:100%;min-height:0;overflow:hidden}
+.view[hidden]{display:none}
+.view{width:100%;height:100%;min-height:0;display:flex;flex-direction:column;gap:8px;padding:0;overflow:hidden}
+.view:not(.has-open){gap:clamp(8px,4.68px,12px)}
+.asset-group{flex:1 1 0;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden;border:0;border-radius:10px;background:#f5f6f7;transition:flex-grow .35s cubic-bezier(.16,1,.3,1)}
+.view:not(.has-open){display:grid;grid-template-rows:repeat(3,minmax(126px,1fr));align-content:stretch}
+.view:not(.has-open) .asset-group{width:100%;height:100%;min-height:126px;overflow:hidden}
+.asset-group:hover{border-color:transparent}
+.asset-group.is-open{flex:1 1 auto;border-color:transparent;box-shadow:none}
+.view.has-open .asset-group:not(.is-open){flex:0 0 auto;grid-template-rows:auto 0fr}
+.group-head{width:100%;min-height:45px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;border:0;color:inherit;background:transparent;cursor:pointer;text-align:left}
+.group-head>span:first-child{display:flex;align-items:baseline;gap:8px}
+.group-head strong{font-size:13px}
+.group-head small{color:var(--muted);font-size:10px}
+.action{display:flex;align-items:center;gap:8px;color:#8f959e;font-size:10px}
+.action i{position:relative;width:18px;height:18px;border-radius:50%;background:#f2f3f5}
+.action i:before,.action i:after{content:"";position:absolute;left:5px;top:8px;width:8px;height:1.5px;border-radius:2px;background:#646a73;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.action i:after{transform:rotate(90deg)}
+.is-open .action i:after{transform:rotate(0)}
+.group-body{min-height:0;overflow:hidden;opacity:1;transition:opacity .2s ease}
+.view.has-open .asset-group:not(.is-open) .group-body{opacity:0;pointer-events:none}
+.asset-grid{position:relative;width:100%;height:100%;min-height:0;overflow:hidden}
+.asset-card{position:absolute;width:58px;height:76px;margin:0;overflow:hidden;border:0;border-radius:0;background:transparent;box-shadow:none;transform:translateX(calc(var(--n,0)*34px)) rotate(calc((var(--n,0) - 2)*1.8deg));transform-origin:bottom center;pointer-events:none;transition:transform .24s cubic-bezier(.16,1,.3,1)}
+.asset-card:nth-child(1){--n:0}.asset-card:nth-child(2){--n:1}.asset-card:nth-child(3){--n:2}.asset-card:nth-child(4){--n:3}
+.asset-card:nth-child(n+5){display:none}
+.asset-card img{display:block;width:100%;height:100%;object-fit:contain}
+.asset-card figcaption{display:none}
+.asset-group:not(.is-open) .asset-grid{height:100%;min-height:0;overflow:hidden;padding:0 14px 8px}
+.view:not(.has-open) .group-body{height:100%;min-height:0;overflow:hidden}
+.asset-group:not(.is-open) .asset-card{top:0;left:14px}
+.asset-group:not(.is-open) figcaption{display:none}
+.asset-group.is-open .asset-grid{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));grid-template-rows:repeat(var(--rows),minmax(0,1fr));align-content:stretch;align-items:stretch;justify-items:stretch;gap:clamp(5px,.65vw,8px);padding:0}
+.asset-group[data-group="minimal"].is-open .asset-grid,.asset-group[data-group="texture"].is-open .asset-grid{padding:clamp(10px,5.04px,14px) clamp(12px,1.5vw,18px) clamp(14px,6.48px,20px)}
+.asset-group.is-open .asset-card{position:relative;inset:auto;display:block;width:100%;height:100%;min-width:0;min-height:0;align-self:stretch;justify-self:stretch;transform:none;pointer-events:auto;cursor:zoom-in}
+.asset-group.is-open .asset-card:hover,.asset-group.is-open .asset-card:focus-visible{z-index:2;transform:none;box-shadow:none;outline:none}
+.illustration-intro{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:1px 2px 2px;color:var(--muted);font-size:10px}
+.illustration-group{flex:1 1 auto}
+.illustration-group .asset-card{background:transparent}
+.illustration-group .asset-card img{object-fit:contain;padding:0}
+.lightbox{position:fixed;z-index:50;inset:0;display:grid;place-items:center;padding:clamp(18px,4vw,42px);background:rgba(20,24,32,.72);backdrop-filter:blur(14px);opacity:0;cursor:zoom-out;transition:opacity .18s ease}
+.lightbox[hidden]{display:none}
+.lightbox.is-open{opacity:1}
+.lightbox-figure{max-width:92vw;max-height:316.8px;max-height:316.8px;margin:0;display:grid;gap:10px;place-items:center;cursor:default;transform:scale(.97);transition:transform .22s cubic-bezier(.16,1,.3,1)}
+.lightbox.is-open .lightbox-figure{transform:scale(1)}
+.lightbox img{display:block;width:auto;height:auto;max-width:88vw;max-height:calc(316.8px - 38px);max-height:calc(316.8px - 38px);border-radius:12px;object-fit:contain;box-shadow:0 24px 70px rgba(0,0,0,.34)}
+.lightbox figcaption{display:none}
+@media(max-width:700px){header p{display:none}.asset-group[data-group="gradient"]{--cols:4;--rows:2}.asset-group[data-group="minimal"]{--cols:5;--rows:2}}
+@media(max-width:520px){.tab{min-width:76px}.asset-group.is-open .asset-grid{gap:5px;padding:0}.asset-group[data-group="minimal"].is-open .asset-grid,.asset-group[data-group="texture"].is-open .asset-grid{padding:8px 10px 12px}.asset-group[data-group="gradient"]{--cols:4;--rows:2}.asset-group[data-group="minimal"],.illustration-group{--cols:5;--rows:2}}
+@media(max-height:520px){main{padding:0;gap:7px}header p{display:none}.group-head{min-height:38px;padding-block:5px}.view{gap:6px}.view:not(.has-open){grid-template-rows:repeat(3,minmax(114px,1fr))}.view:not(.has-open) .asset-group{height:100%;min-height:114px}.view:not(.has-open) .group-body{height:100%;min-height:0;overflow:hidden}.asset-group:not(.is-open) .asset-grid{height:100%;min-height:0;padding:0 14px 6px}.asset-group.is-open .asset-grid{padding:0}.asset-group[data-group="minimal"].is-open .asset-grid,.asset-group[data-group="texture"].is-open .asset-grid{padding:6px 10px 10px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+main{height:auto;min-height:0;display:flex;flex-direction:column;gap:8px;overflow:visible}
+.views,.view{height:auto;min-height:0;overflow:visible}
+.view:not(.has-open){display:flex;gap:8px}
+.view:not(.has-open) .asset-group{flex:none;height:126px;min-height:126px}
+.view.has-open{display:flex}.view.has-open .asset-group:not(.is-open){flex:none;height:45px;min-height:45px}
+.asset-group.is-open{flex:none;height:auto;min-height:0}
+.asset-group.is-open .asset-grid{height:auto;grid-template-rows:none;grid-auto-rows:auto;gap:8px;padding:8px 12px 12px}
+.asset-group.is-open .asset-card{height:auto;aspect-ratio:3/4}.illustration-group.is-open .asset-card{aspect-ratio:1/1}
+.asset-group.is-open .asset-card img{object-fit:contain}
+.lightbox-figure{max-height:92vh}.lightbox img{max-height:86vh;max-width:92vw;border-radius:4px}
+@media(max-width:520px){.asset-group[data-group^="replacement-"]{--cols:2!important;--rows:4!important}}
+
+[hidden]{display:none!important}
+
+/* Keep category cards separate and never render an inactive tab. */
+.views{display:flex;flex-direction:column;gap:12px}
+.view,.view:not(.has-open),.view.has-open{gap:12px}
+.view>.asset-group{margin:0;flex-shrink:0}
+.view[hidden]{display:none!important}
+
+
+
+
+
+/* One row for the eight minimal backgrounds, with compact labels inside mixed illustration sets. */
+.asset-group[data-group="replacement-1"].is-open .asset-grid{grid-template-columns:repeat(8,minmax(0,1fr))}
+.illustration-group.is-open .asset-card figcaption{display:block;position:absolute;left:5px;bottom:5px;max-width:calc(100% - 10px);padding:3px 5px;border-radius:4px;color:#646a73;background:rgba(255,255,255,.87);font-size:10px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:700px){.asset-group[data-group="replacement-1"].is-open .asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:520px){.asset-group[data-group="replacement-1"].is-open .asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Collapsed illustration stacks preview two examples from each of their two styles. */
+.illustration-group:not(.is-open) .asset-card{width:62px;height:82px;transform:translateX(calc(var(--n,0)*50px)) rotate(calc((var(--n,0) - 1.5)*1deg))}
+.illustration-group:not(.is-open) .asset-card:nth-child(n+3){display:none}
+.illustration-group:not(.is-open) .asset-card:nth-child(9){display:block;--n:2.2}
+.illustration-group:not(.is-open) .asset-card:nth-child(10){display:block;--n:3.2}
+</style></head>
+<body>
+<main>
+<header><h1>视觉素材</h1><p>展开后点击单张素材可放大查看</p></header>
+<nav class="tabs" role="tablist" aria-label="素材类型">
+<button class="tab" id="tab-background" role="tab" aria-selected="true" aria-controls="view-background" tabindex="0">背景</button>
+<button class="tab" id="tab-illustration" role="tab" aria-selected="false" aria-controls="view-illustration" tabindex="-1">插图</button>
+</nav>
+<div class="views"><section class="view" id="view-background" role="tabpanel" aria-labelledby="tab-background"><section class="asset-group" data-group="gradient" style="--cols:7;--rows:1">
+      <button class="group-head" type="button" aria-expanded="false">
+        <span><strong>渐变</strong><small>7 款</small></span>
+        <span class="action"><span class="action-copy">展开平铺</span><i aria-hidden="true"></i></span>
+      </button>
+      <div class="group-body"><div class="asset-grid"><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看柔雾蓝紫"><img src="assets/images/01-bg_87428722.png" alt="柔雾蓝紫"><figcaption>柔雾蓝紫</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看日落粉橙"><img src="assets/images/02-bg_87428724.png" alt="日落粉橙"><figcaption>日落粉橙</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看湖光青蓝"><img src="assets/images/03-bg_87428723.png" alt="湖光青蓝"><figcaption>湖光青蓝</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看莓果紫红"><img src="assets/images/04-bg_87428726.png" alt="莓果紫红"><figcaption>莓果紫红</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看晴空蓝"><img src="assets/images/05-bg_87428725.png" alt="晴空蓝"><figcaption>晴空蓝</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看暖阳橙"><img src="assets/images/06-bg_87428732.png" alt="暖阳橙"><figcaption>暖阳橙</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看薄荷青"><img src="assets/images/07-bg_87428727.png" alt="薄荷青"><figcaption>薄荷青</figcaption></figure></div></div>
+    </section><section class="asset-group" data-group="replacement-1" style="--cols:8;--rows:1"><button class="group-head" type="button" aria-expanded="false"><span><strong>简约</strong><small>8 款</small></span><span class="action"><span class="action-copy">展开平铺</span><i aria-hidden="true"></i></span></button><div class="group-body"><div class="asset-grid"><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 01"><img src="assets/images/new-1-01.png" alt="简约 · 01"><figcaption>简约 · 01</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 02"><img src="assets/images/new-1-02.png" alt="简约 · 02"><figcaption>简约 · 02</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 03"><img src="assets/images/new-1-03.png" alt="简约 · 03"><figcaption>简约 · 03</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 04"><img src="assets/images/new-1-04.png" alt="简约 · 04"><figcaption>简约 · 04</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 05"><img src="assets/images/new-1-05.png" alt="简约 · 05"><figcaption>简约 · 05</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 06"><img src="assets/images/new-1-06.png" alt="简约 · 06"><figcaption>简约 · 06</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 07"><img src="assets/images/new-1-07.png" alt="简约 · 07"><figcaption>简约 · 07</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看简约 · 08"><img src="assets/images/new-1-08.png" alt="简约 · 08"><figcaption>简约 · 08</figcaption></figure></div></div></section></section><section class="view" id="view-illustration" role="tabpanel" aria-labelledby="tab-illustration" hidden><section class="asset-group illustration-group" data-group="replacement-help" style="--cols:8;--rows:2"><button class="group-head" type="button" aria-expanded="false"><span><strong>求助类</strong><small>16 款</small></span><span class="action"><span class="action-copy">展开平铺</span><i aria-hidden="true"></i></span></button><div class="group-body"><div class="asset-grid"><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 01"><img src="assets/images/new-2-01.png" alt="求助类 · 线稿 · 01"><figcaption>线稿 · 01</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 02"><img src="assets/images/new-2-02.png" alt="求助类 · 线稿 · 02"><figcaption>线稿 · 02</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 03"><img src="assets/images/new-2-03.png" alt="求助类 · 线稿 · 03"><figcaption>线稿 · 03</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 04"><img src="assets/images/new-2-04.png" alt="求助类 · 线稿 · 04"><figcaption>线稿 · 04</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 05"><img src="assets/images/new-2-05.png" alt="求助类 · 线稿 · 05"><figcaption>线稿 · 05</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 06"><img src="assets/images/new-2-06.png" alt="求助类 · 线稿 · 06"><figcaption>线稿 · 06</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 07"><img src="assets/images/new-2-07.png" alt="求助类 · 线稿 · 07"><figcaption>线稿 · 07</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 线稿 · 08"><img src="assets/images/new-2-08.png" alt="求助类 · 线稿 · 08"><figcaption>线稿 · 08</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 01"><img src="assets/images/new-3-01.png" alt="求助类 · 动物 · 01"><figcaption>动物 · 01</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 02"><img src="assets/images/new-3-02.png" alt="求助类 · 动物 · 02"><figcaption>动物 · 02</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 03"><img src="assets/images/new-3-03.png" alt="求助类 · 动物 · 03"><figcaption>动物 · 03</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 04"><img src="assets/images/new-3-04.png" alt="求助类 · 动物 · 04"><figcaption>动物 · 04</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 05"><img src="assets/images/new-3-05.png" alt="求助类 · 动物 · 05"><figcaption>动物 · 05</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 06"><img src="assets/images/new-3-06.png" alt="求助类 · 动物 · 06"><figcaption>动物 · 06</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 07"><img src="assets/images/new-3-07.png" alt="求助类 · 动物 · 07"><figcaption>动物 · 07</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看求助类 · 动物 · 08"><img src="assets/images/new-3-08.png" alt="求助类 · 动物 · 08"><figcaption>动物 · 08</figcaption></figure></div></div></section><section class="asset-group illustration-group" data-group="replacement-nonhelp" style="--cols:8;--rows:2"><button class="group-head" type="button" aria-expanded="false"><span><strong>非求助类</strong><small>16 款</small></span><span class="action"><span class="action-copy">展开平铺</span><i aria-hidden="true"></i></span></button><div class="group-body"><div class="asset-grid"><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 01"><img src="assets/images/nonhelp-style1-01.png" alt="非求助类 · 生活物件 · 01"><figcaption>生活物件 · 01</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 02"><img src="assets/images/nonhelp-style1-02.png" alt="非求助类 · 生活物件 · 02"><figcaption>生活物件 · 02</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 03"><img src="assets/images/nonhelp-style1-03.png" alt="非求助类 · 生活物件 · 03"><figcaption>生活物件 · 03</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 04"><img src="assets/images/nonhelp-style1-04.png" alt="非求助类 · 生活物件 · 04"><figcaption>生活物件 · 04</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 05"><img src="assets/images/nonhelp-style1-05.png" alt="非求助类 · 生活物件 · 05"><figcaption>生活物件 · 05</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 06"><img src="assets/images/nonhelp-style1-06.png" alt="非求助类 · 生活物件 · 06"><figcaption>生活物件 · 06</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 07"><img src="assets/images/nonhelp-style1-07.png" alt="非求助类 · 生活物件 · 07"><figcaption>生活物件 · 07</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 生活物件 · 08"><img src="assets/images/nonhelp-style1-08.png" alt="非求助类 · 生活物件 · 08"><figcaption>生活物件 · 08</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 01"><img src="assets/images/nonhelp-style2-01.png" alt="非求助类 · 拟人图标 · 01"><figcaption>拟人图标 · 01</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 02"><img src="assets/images/nonhelp-style2-02.png" alt="非求助类 · 拟人图标 · 02"><figcaption>拟人图标 · 02</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 03"><img src="assets/images/nonhelp-style2-03.png" alt="非求助类 · 拟人图标 · 03"><figcaption>拟人图标 · 03</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 04"><img src="assets/images/nonhelp-style2-04.png" alt="非求助类 · 拟人图标 · 04"><figcaption>拟人图标 · 04</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 05"><img src="assets/images/nonhelp-style2-05.png" alt="非求助类 · 拟人图标 · 05"><figcaption>拟人图标 · 05</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 06"><img src="assets/images/nonhelp-style2-06.png" alt="非求助类 · 拟人图标 · 06"><figcaption>拟人图标 · 06</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 07"><img src="assets/images/nonhelp-style2-07.png" alt="非求助类 · 拟人图标 · 07"><figcaption>拟人图标 · 07</figcaption></figure><figure class="asset-card" role="button" tabindex="-1" aria-label="放大查看非求助类 · 拟人图标 · 08"><img src="assets/images/nonhelp-style2-08.png" alt="非求助类 · 拟人图标 · 08"><figcaption>拟人图标 · 08</figcaption></figure></div></div></section></section></div>
+</main>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="素材大图预览" tabindex="-1" hidden="">
+<figure class="lightbox-figure"><img alt="柔和网格"><figcaption>柔和网格</figcaption></figure>
+</div>
+<script>
+const tabs=[...document.querySelectorAll('.tab')];
+const views=[...document.querySelectorAll('.view')];
+const lightbox=document.querySelector('.lightbox');
+const lightboxImage=lightbox.querySelector('img');
+const lightboxCaption=lightbox.querySelector('figcaption');
+let lastTrigger=null;
+function selectTab(tab){
+  tabs.forEach(item=>{const selected=item===tab;item.setAttribute('aria-selected',selected);item.tabIndex=selected?0:-1;});
+  views.forEach(view=>{const active=view.id===tab.getAttribute('aria-controls');view.hidden=!active;view.style.display=active?'flex':'none';});requestAnimationFrame(fitEmbedHeight);
+}
+function setGroupOpen(group,open){
+  const view=group.closest('.view');
+  [...view.querySelectorAll('.asset-group')].forEach(item=>{
+    const active=item===group&&open;
+    item.classList.toggle('is-open',active);
+    const button=item.querySelector('.group-head');
+    button.setAttribute('aria-expanded',active);
+    button.querySelector('.action-copy').textContent=active?'收起堆叠':'展开平铺';
+    item.querySelectorAll('.asset-card').forEach(card=>card.tabIndex=active?0:-1);
+  });
+  view.classList.toggle('has-open',open);
+  requestAnimationFrame(()=>requestAnimationFrame(fitEmbedHeight));
+}
+function openLightbox(card){
+  const image=card.querySelector('img');
+  lastTrigger=card;
+  lightboxImage.src=image.src;
+  lightboxImage.alt=image.alt;
+  lightboxCaption.textContent=image.alt;
+  lightbox.hidden=false;
+  document.querySelector('main').inert=true;
+  requestAnimationFrame(()=>{lightbox.classList.add('is-open');lightbox.focus();});
+}
+function closeLightbox(){
+  if(lightbox.hidden)return;
+  lightbox.classList.remove('is-open');
+  document.querySelector('main').inert=false;
+  window.setTimeout(()=>{lightbox.hidden=true;lightboxImage.removeAttribute('src');lastTrigger?.focus();},180);
+}
+tabs.forEach((tab,index)=>{
+  tab.addEventListener('click',()=>selectTab(tab));
+  tab.addEventListener('keydown',event=>{
+    if(!['ArrowLeft','ArrowRight'].includes(event.key))return;
+    event.preventDefault();
+    const next=tabs[(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length];
+    next.focus();selectTab(next);
+  });
+});
+document.querySelectorAll('.group-head').forEach(button=>button.addEventListener('click',()=>{
+  const group=button.closest('.asset-group');
+  setGroupOpen(group,!group.classList.contains('is-open'));
+}));
+document.querySelectorAll('.asset-card').forEach(card=>{
+  card.addEventListener('click',()=>openLightbox(card));
+  card.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();openLightbox(card);}});
+});
+lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!lightbox.hidden)closeLightbox();});
+let requestedHeight=0;
+function fitEmbedHeight(){const target=Math.ceil(document.querySelector('main').getBoundingClientRect().height)+2;if(target===requestedHeight)return;requestedHeight=target;try{if(window.magic&&typeof window.magic.updateHeight==='function')window.magic.updateHeight(target)}catch(error){}}
+selectTab(tabs[0]);
+window.addEventListener('resize',fitEmbedHeight);
+window.addEventListener('load',fitEmbedHeight);
+new ResizeObserver(fitEmbedHeight).observe(document.querySelector('main'));
+fitEmbedHeight();
+requestAnimationFrame(()=>requestAnimationFrame(fitEmbedHeight));
+let heightAttempts=0;
+const heightTimer=setInterval(()=>{requestedHeight=0;fitEmbedHeight();if(++heightAttempts>=24)clearInterval(heightTimer);},500);
+</script>
+
+</body></html>

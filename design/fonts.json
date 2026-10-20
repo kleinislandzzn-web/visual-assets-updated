@@ -1,0 +1,9 @@
+{
+  "originalStack": [
+    "font-family:\"Avenir Next\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif"
+  ],
+  "embeddedFontsInOriginal": [],
+  "portableFont": "Noto Sans SC variable, SIL OFL 1.1",
+  "portableFontFile": "assets/fonts/NotoSansSC-Variable.ttf",
+  "note": "原始页面使用 Avenir Next / PingFang SC / Microsoft YaHei 系统字体，未提供字体文件。保留原版字体栈，并另附开源字体入口；不将字体替代声明为原字体。图片内文字按原图保留，不需要安装字体。"
+}
